@@ -1,0 +1,155 @@
+html {
+    height: 100%;
+    
+}
+
+body {
+    background-color: rgb(148, 96, 7);
+    background-size: cover;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+    color: #2E2602;
+    font-size: 1.4em;
+    font-family: 'Anton', sans-serif;
+    height: 100%;
+    
+}
+
+img {
+    border-radius: 50%;
+    width: 15%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -2em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ 
+}
+
+h1 {
+    text-align: center;
+    margin-top: -4em;
+    
+}
+
+.name {
+    font-family: 'Lobster', cursive;
+    font-size: 1.8em;
+    color: #F8EAAF;
+    text-shadow: 2px 2px 5px rgb(80, 9, 9), 0 0 25px rgb(173, 121, 121), 0 0 5px rgb(100, 54, 54)
+    
+}
+
+#profession {
+    display: block;
+    text-align: center;
+    
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#welcome {
+    align-items: center;
+    justify-content: center;
+
+}
+
+p {
+    width: 80%;
+    margin: auto;
+
+}
+
+ul {
+    position: absolute;
+    left: 45%;
+    margin-top: 3rem;
+     
+}
+
+ul li:nth-child(even) {
+    color: #F8EAAF;
+
+}
+
+footer {
+    position: relative;
+    margin-top: 3em;
+    left: 43%;
+    width: 50%;
+}
+
+h2 {
+    font-size: 0.9em;
+    font-weight: bolder;
+    
+}
+
+form {
+    font-size: 0.7em;
+}
+
+input {
+    height: 1.8em;
+    border-radius: 4px;
+}
+
+.button {
+    background-color: #F8EAAF;
+    border-radius: 4px;
+    border-color: black;
+    height: 2.2em;
+
+}
+
+.button:hover {
+    background-color: #2E2602;
+    color:white;
+  }
+
+#reset {
+    margin-left: 2em;
+}
+
+#message {
+    height: 2em;
+    overflow:scroll;
+    
+}
+
+#contacts {
+    margin-top: 1em;
+    margin-left: -10%;
+    
+}
+
+#contacts-container {
+    display: inline-flexbox;
+        
+}
+
+.contact-details {
+   padding: 0.5em;
+   color: #F8EAAF;
+
+}
+
+.contact-details:hover {
+    color: #2E2602;
+    
+  }
+
+a {
+    color: beige;
+}
+
+a:visited {
+    color: black;
+  }
