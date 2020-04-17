@@ -11,17 +11,25 @@
     />
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Anton|Lobster&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" media="(max-width: 640px)" href="max-640px.css">
+    <link rel="stylesheet" media="(min-width: 640px)" href="min-640px.css">
+    <link rel="stylesheet" media="(orientation: portrait)" href="portrait.css">
+    <link rel="stylesheet" media="(orientation: landscape)" href="landscape.css">
+   
     <title>About me</title>
 </head>
 <body>
-<div class="container"> 
- <section id="welcome">
-    <img width=20% src="image1.jpeg" alt=""/>
+ <a name="top"></a>
+
+ <div id="container"> 
+  <section id="welcome">
+    <img width=20% id="my-img" src="image1.jpeg" alt=""/>
     <h1><div class="name">Viktoriia Petrova</div><span id="profession">- software developer</span></h1> 
-  
-    <p>
+
+    <p id="p-aboutme">
         Hi and welcome to my page. 
-        Currently I study coding at <a href="https://www.manchestercodes.com/" target="_blank">Manchester Codes</a>.I am originally from Russia, but now I am located in Manchester.
+        Currently I study coding at <a href="https://www.manchestercodes.com" target="_blank">Manchester Codes</a>.I am originally from Russia, but now I am located in Manchester.
         In my free time I love:
          <ul>
              <li>Travelling</li>
@@ -33,9 +41,47 @@
     
     </p>
  </section>
-</div>
+
+ <a name="prs"></a>
+
+ <section id="projects" class="projects-section">
+   <h2 class="projects-section-header">My projects</h2>
+
+   <div class="projects-grid">
+     <a 
+      href="https://codepen.io/etrovavica1221/full/JjobyRQ"
+      target="_blank"
+      class="project project-tile"
+      >
+      <img 
+      class="project-image"
+      src="saint-petersburg.png"
+      alt="Tribute Page. St Petersburg."
+      />
+      <p class="project-title">
+       Tribute Page. St Petersburg.
+      </p>
+     </a>
+    
+     <a 
+      href="https://codepen.io/etrovavica1221/full/MWYpgGM"
+      target="_blank"
+      class="project project-tile"
+      >
+      <img 
+       class="project-image"
+       src="love-wine.png"
+       alt="Landing page. Love wine."
+       />
+       <p class="project-title">
+        Landing page. Love wine.
+      </p>
+     </a>
+   </div>
+ </section>
+  
  <footer>
-    <h2>Send me a message:</h2>
+    <h3>Send me a message:</h3>
 
     <form action="mailto:etrovavica1221.com" method="post" enctype="text/plain">
     Name:<br>
@@ -44,11 +90,13 @@
     <input type="text" name="mail"><br>
     Message:<br>
     <input id="message" type="text" name="comment" size="60"><br><br>
+    <div id="btns">
     <input class="button" type="submit" value="Send">
     <input class="button" id="reset" type="reset" value="Reset">
+    </div>
     </form>
     
-  <section id="contacts">
+   <section class="contacts" name="contacts">
     <div id="contact-container">
          <a href="https://www.linkedin.com/in/viktoriia-petrova-76865617b/"
            target="_blank"
@@ -56,7 +104,7 @@
          </a>
          
          <a
-     href="https://github.com/etrovavica1221"
+           href="https://github.com/etrovavica1221"
            target="_blank"
            class="contact-details"><i class="fab fa-github"></i> GitHub
         </a>
@@ -65,10 +113,10 @@
           target="_blank"
           class="contact-details"><i class="fab fa-twitter"></i> Twitter
          </a>
-        </div>
-  </section>    
-
+    </div>
+   </section>
  </footer>
+</div>
 
 </body>
 </html>
