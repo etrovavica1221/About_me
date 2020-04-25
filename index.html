@@ -11,27 +11,33 @@
     />
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Anton|Lobster&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" media="(max-width: 640px)" href="max-640px.css">
-    <link rel="stylesheet" media="(min-width: 640px)" href="min-640px.css">
-    <link rel="stylesheet" media="(orientation: portrait)" href="portrait.css">
-    <link rel="stylesheet" media="(orientation: landscape)" href="landscape.css">
-   
+    <link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
     <title>About me</title>
 </head>
 <body>
  <a name="top"></a>
+ <br>
+ <nav class="topnav">
+  <ul id="nav-left">
+   <li class="nav_item"><a href="#top">About me</a></li>
+   <li class="nav_item"><a href="#prs">My Projects</a></li>
+   <li class="nav_item"><a href="#contacts">Social</a></li>
+  </ul>
+  <ul id="nav-right">
+   <li class="nav_item" id="nav-message"><a href="contact.html">Contact me</a></li>
+  </ul>
+ </nav> 
 
- <div id="container"> 
+ <div id="container">
   <section id="welcome">
     <img width=20% id="my-img" src="image1.jpeg" alt=""/>
     <h1><div class="name">Viktoriia Petrova</div><span id="profession">- software developer</span></h1> 
 
     <p id="p-aboutme">
         Hi and welcome to my page. 
-        Currently I study coding at <a href="https://www.manchestercodes.com" target="_blank">Manchester Codes</a>.I am originally from Russia, but now I am located in Manchester.
+        Currently I study coding at <a class="h-link" href="https://www.manchestercodes.com" target="_blank">Manchester Codes</a>.I am originally from Russia, but now I am located in Manchester.
         In my free time I love:
-         <ul>
+         <ul id="hobbies">
              <li>Travelling</li>
              <li>Yoga</li>
              <li>Zumba</li>
@@ -79,26 +85,12 @@
      </a>
    </div>
  </section>
-  
-  <section id="con-form">
-    <h3>Send me a message:</h3>
-
-    <form action="mailto:etrovavica1221.com" method="post" enctype="text/plain">
-    Name:<br>
-    <input class="input" type="text" name="name"><br>
-    E-mail:<br>
-    <input class="input" type="text" name="mail"><br>
-    Message:<br>
-    <input id="message" type="text" name="comment" size="60"><br><br>
-    <div id="btns">
-    <input class="button" type="submit" value="Send">
-    <input class="button" id="reset" type="reset" value="Reset">
-    </div>
-    </form>
-  </section>
-  
+ 
+ <h3>Send me a message<a class="h-link" href=contact.html id="click-here-link"><span id="click-here">click here</span></a></h3>
  <footer>
-   <section class="contacts" name="contacts">
+   <a name="contacts"></a>
+   
+   <section class="contacts">
     <div id="contact-container">
          <a href="https://www.linkedin.com/in/viktoriia-petrova-76865617b/"
            target="_blank"

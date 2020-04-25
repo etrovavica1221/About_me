@@ -1,6 +1,10 @@
 html {
     height: 100%;
     max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
 }
 
 body {
@@ -12,8 +16,12 @@ body {
     font-size: 1.4em;
     font-family: 'Anton', sans-serif;
     height: 100%;
+    width: 100%;
     text-align: center;
     justify-content: center;
+    margin: 0;
+    padding: 0;
+    border: 0;
     
 }
 
@@ -22,8 +30,54 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 60px 0 0 0;
+    width: 100%;
 
 }
+
+.topnav {
+    background: rgb(51, 39, 12);
+    height: 60px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 1;
+    top: 0; 
+    width: 100%;
+    
+  }
+
+.topnav a:hover {
+    color: #F8EAAF;
+
+}
+
+#nav-left li {
+    float: left;
+    list-style: none;
+    padding: 0 30px; 
+    margin: 0;
+
+  }
+
+#nav-left {
+    margin-left: -50px;
+
+}
+
+#nav-right {
+    float: right!important;
+    list-style: none;
+    padding: 0 40px; 
+    margin: 0;
+
+  }
+
+.nav_item a {
+    color: rgb(252, 208, 10);
+    text-shadow: -1px 0 brown, 0 1px brown, 1px 0 brown, 0 -1px brown;
+    text-decoration: none;
+  }
+
 
 #my-img {
     border-radius: 50%;
@@ -38,7 +92,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.5em;
+    margin: 5px 0 20px 0;
 
 }
 
@@ -51,13 +105,11 @@ h1 {
     font-family: 'Lobster', cursive;
     font-size: 1.8em;
     color: #F8EAAF;
-    text-shadow: 2px 2px 5px rgb(80, 9, 9), 0 0 25px rgb(173, 121, 121), 0 0 5px rgb(100, 54, 54)
-    
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 #profession {
     display: block;
-    margin-left: 2em;
     
 }
 
@@ -67,12 +119,15 @@ h1 {
 
 }
 
-ul {
+#hobbies {
     margin-top: 2em;
     list-style-type: none;
+    position: relative;
+    right: 1.2em;
+
 }
 
-ul li:nth-child(even) {
+#hobbies li:nth-child(even) {
     color: #F8EAAF;
 
 }
@@ -124,18 +179,30 @@ h2 {
    
 }
 
-#con-form {
-    display: block;
-    text-align: center;
-
-}
-
 h3 {
-    font-size: 0.9em;
+    font-size: 1.4em;
     font-weight: bolder;
     padding: 1em;
     margin: auto;
+    color: #2E2602;
     
+}
+
+h4 {
+    font-size: 1.8em;
+    font-weight: bolder;
+    padding: 1em;
+    margin: auto;
+    color: #2E2602;
+    
+}
+
+#contact-form {
+    margin-top: 5em;
+    display: block;
+    text-align: center;
+    width: 100%;
+
 }
 
 form {
@@ -143,21 +210,23 @@ form {
     margin-left: auto;
     margin-right: auto;
     text-align: left;
-    font-size: 0.7em
+    font-size: 0.7em;
 
 }
 
 .input {
-    height: 1.8em;
+    height: 2.2em;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
     border-radius: 4px;
-    width: 12em;
+    width: 18em;
     
 }
 
 #message {
     border-radius: 4px;
     height: 2em;
-    width: 12em;
+    width: 18em;
     overflow: scroll;
     
 }
@@ -176,11 +245,11 @@ form {
     border-radius: 4px;
     border-color: black;
     height: 2.2em;
-
+    width: 4em;
 }
 
 .button:hover {
-    background-color: #2E2602;
+    background-color: rgb(191, 150, 0);
     color:white;
   }
 
@@ -211,19 +280,40 @@ footer {
 
 }
 
+#click-here {
+    display: block;
+    font-size: 1.3em;
+    color: rgb(252, 208, 10);
+    font-family: 'Modak', cursive;
+    font-weight: 500;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+#click-here:hover {
+    color: rgb(191, 150, 0);
+}
+
+#click-here-link{
+    text-decoration: none;
+}
+
 .contact-details:hover {
-    color: #2E2602;
-    margin: auto;
+    color: rgb(191, 150, 0);
     
   }
 
 a {
-    color: beige;
+    color: #2E2602;  
 }
 
-a:visited {
-    color: black;
-  }
+a.contact-details {
+    text-decoration: none;
+}
+
+.h-link:hover {
+    color: rgb(191, 150, 0);
+}
 
   @media only screen and (max-width: 1000px) {
       h1,.projects-section-header {
@@ -244,7 +334,7 @@ a:visited {
 
 
   @media only screen and (max-width: 600px) {
-      h1 {
+      h1,h3 {
           font-size: 0.8em;
       }
 
