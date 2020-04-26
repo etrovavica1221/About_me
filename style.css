@@ -38,6 +38,7 @@ body {
 .topnav {
     background: rgb(51, 39, 12);
     height: 60px;
+    max-height: 60px;
     overflow: hidden;
     position: fixed;
     z-index: 1;
@@ -54,21 +55,23 @@ body {
 #nav-left li {
     float: left;
     list-style: none;
-    padding: 0 30px; 
     margin: 0;
+    padding: 0 20px;
 
   }
 
 #nav-left {
-    margin-left: -50px;
+    margin-left: -45px;
+    max-height: 60px;
 
 }
 
 #nav-right {
     float: right!important;
     list-style: none;
-    padding: 0 40px; 
+    padding: 0 10px 0 5px;
     margin: 0;
+    max-height: 60px;
 
   }
 
@@ -77,7 +80,6 @@ body {
     text-shadow: -1px 0 brown, 0 1px brown, 1px 0 brown, 0 -1px brown;
     text-decoration: none;
   }
-
 
 #my-img {
     border-radius: 50%;
@@ -257,13 +259,13 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 1em;
+    padding: 10px;
     margin: auto;
 }
 
 .contacts {
     margin: auto;
-    padding: 1em;
+    padding: 5px;
 
 }
 
@@ -342,6 +344,11 @@ a.contact-details {
         font-size: 0.6em;
       }
 
+      #nav-left li {
+          padding: 0 10px;
+          
+      }
+
   }
 
   @media only screen and (max-width: 370px) {
@@ -349,3 +356,4 @@ a.contact-details {
         font-size: 0.4em;
       }
   }
+
