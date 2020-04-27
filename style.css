@@ -301,17 +301,36 @@ footer {
     text-decoration: none;
 }
 
+.contact-details {
+    font-size: 1.5em;
+    margin: auto;
+    border-radius: 50%;
+    
+   
+}
+
 .contact-details:hover {
     color: rgb(191, 150, 0);
     
+    
   }
 
+.spin {
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+            transition:         transform .8s ease-in-out;
+}
+
+.spin:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
 a {
     color: #2E2602;  
 }
 
 a.contact-details {
     text-decoration: none;
+
 }
 
 .h-link:hover {
