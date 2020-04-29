@@ -349,7 +349,7 @@ a.contact-details {
   }
 
   @media only screen and (max-width: 700px) {
-      h1 {
+      h1, .contact-details {
           font-size: 1em;
       }
   }
@@ -360,14 +360,14 @@ a.contact-details {
           font-size: 0.8em;
       }
 
-      p,ul,.project-title,.contact-details {
+      p,ul,.project-title {
         font-size: 0.6em;
       }
 
   }
 
   @media only screen and (max-width: 370px) {
-    p,ul,.project-title,.contact-details {
+    p,.project-title, {
         font-size: 0.4em;
       }
   }
